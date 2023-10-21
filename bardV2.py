@@ -3,7 +3,7 @@ import os
 import csv
 
 # set your __Secure-1PSID value to key
-token = 'cQhhRTzbc4ieZaa2GBZ9iV5aBSXT2zRx6I0QIOkE5H6znY9pKu4X1B1ZDKyo5sLSZKD9pQ.'
+token = 'cQhhRTxOE2D8ABeHr8HoO4LgM6eTVWnlhTXA1dmyZau7Uh6Idl1dr79FNtygwxvLFzILKw.'
 
 # set your input text
 # input_text = "What movie would you recommend?"
@@ -19,7 +19,7 @@ with open("dataset/dataset_label_4.csv", 'rt') as fileFake:
     reader = csv.reader(fileFake)
     next(reader)
     for row in reader:
-        prompt = "'" + row[1] + "' Does the given text is a fake news? It Spreads misinformation? Answer only with yes or no"
+        prompt = "'" + row[1] + "' Does the given text contain characteristics of fake news? It spreads misinformation? Answer only with yes or no."
         classification = bardapi.core.Bard(token).get_answer(prompt)
         data.append([row[1], row[3], classification['content']])
     writerResult.writerow(['text', 'is_fake_news', 'gpt_classification'])
