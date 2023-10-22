@@ -3,7 +3,7 @@ import os
 import csv
 
 # set your __Secure-1PSID value to key
-token = 'cQhhRXsKV8ME303x-YtNf01c_PW3lBNxr0ON0DR4hVojatZRCMAv0TiY37rt9JCJUeGpaA.'
+token = 'cQhhRcNHHaeBb_x6cGGbFWDMOOuQSOxkioszqGMkfw8BQUvxRp_Esi35wLIlsIxwO7rABg.'
 
 # set your input text
 # input_text = "What movie would you recommend?"
