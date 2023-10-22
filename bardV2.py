@@ -3,7 +3,7 @@ import os
 import csv
 
 # set your __Secure-1PSID value to key
-token = 'cQhhRTxOE2D8ABeHr8HoO4LgM6eTVWnlhTXA1dmyZau7Uh6Idl1dr79FNtygwxvLFzILKw.'
+token = 'cQhhRXsKV8ME303x-YtNf01c_PW3lBNxr0ON0DR4hVojatZRCMAv0TiY37rt9JCJUeGpaA.'
 
 # set your input text
 # input_text = "What movie would you recommend?"
@@ -12,10 +12,10 @@ token = 'cQhhRTxOE2D8ABeHr8HoO4LgM6eTVWnlhTXA1dmyZau7Uh6Idl1dr79FNtygwxvLFzILKw.
 # response = bardapi.core.Bard(token).get_answer(input_text)
 # print(response)
 
-csvFinalResult = open('results/classification_result4.csv', 'w', newline='')
+csvFinalResult = open('results/classification_result3.csv', 'w', newline='')
 writerResult = csv.writer(csvFinalResult) 
 data = []
-with open("dataset/dataset_label_4.csv", 'rt') as fileFake:
+with open("dataset/dataset_label_3.csv", 'rt') as fileFake:
     reader = csv.reader(fileFake)
     next(reader)
     for row in reader:
